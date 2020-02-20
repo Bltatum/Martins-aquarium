@@ -1,0 +1,27 @@
+body {
+    background-color: aquamarine;
+}
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    
+}
+h1 {
+    text-decoration: underline;
+    text-align: center;
+}
+h3 {
+    text-decoration: underline;
+    font-style: italic;
+}
+.quotes {
+    border: solid;
+    border-color: black;
+    border-spacing: 1em;
+    margin: 1em;
+    
+}
+.navigation {
+    text-align: center;
+}
