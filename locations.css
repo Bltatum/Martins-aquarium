@@ -3,25 +3,53 @@ body {
 }
 .container {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
     justify-content: space-between;
     
+}
+header {
+    text-align: center;
 }
 h1 {
     text-decoration: underline;
     text-align: center;
 }
+h2 {
+    text-decoration: underline;
+}
 h3 {
     text-decoration: underline;
     font-style: italic;
 }
-.quotes {
+/* .quotes {
     border: solid;
     border-color: black;
     border-spacing: 1em;
     margin: 1em;
     
-}
+} */
 .navigation {
     text-align: center;
 }
+img {
+    display: block;
+    flex-wrap: wrap;
+    height: 8rem;
+    width: 8rem;
+    border-radius: 25%;
+}
+figcaption {
+    display: block;
+
+}
+figure {
+    background-color: whitesmoke;
+    border-radius: 25%;
+}
+button {
+    border-radius: 25%;
+    background-color: coral;
+}
+button:hover {
+    background-color: blue;
+  }
