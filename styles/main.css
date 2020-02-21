@@ -6,6 +6,7 @@
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+
 }
 
 
@@ -39,5 +40,21 @@ img {
     flex-wrap: wrap;
     height: 8rem;
     width: 8rem;
+    border-radius: 25%;
 
 }
+figcaption {
+    display: block;
+
+}
+figure {
+    background-color: whitesmoke;
+    border-radius: 25%;
+}
+button {
+    border-radius: 25%;
+    background-color: coral;
+}
+button:hover {
+    background-color: blue;
+  }
