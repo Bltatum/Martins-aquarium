@@ -34,5 +34,20 @@ document.querySelector("#button--gallatin").addEventListener(
         theDialog.showModal()
     }
 )
+document.querySelector("#button--puerto").addEventListener(
+    "click",
+    theClickEvent => {
+        const theDialog = document.querySelector("#details--puerto")
+        theDialog.showModal()
+    }
+)
+
+document.querySelector("#button--Bahamas").addEventListener(
+    "click",
+    theClickEvent => {
+        const theDialog = document.querySelector("#details--Bahamas")
+        theDialog.showModal()
+    }
+)
 
 initializeDetailButtonEvents();

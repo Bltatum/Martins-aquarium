@@ -11,6 +11,9 @@
 body{
     background-color: aquamarine;
 }
+.navigation {
+    text-align: center;
+}
 
 ul {
     list-style-type: none;
@@ -42,6 +45,7 @@ img {
 figcaption {
     display: block;
     text-align: center;
+   
 
 }
 figure {
@@ -51,7 +55,8 @@ figure {
 button {
     border-radius: 25%;
     background-color: coral;
+ 
 }
 button:hover {
-    background-color: blue;
+    background-color: yellowgreen;
   }
