@@ -1,5 +1,4 @@
 const initializeDetailButtonEvents = () => {
-    // CAN'T TOUCH THIS - START
     const allCloseButtons = document.querySelectorAll(".button--close")
 
     for (const btn of allCloseButtons) {
@@ -12,10 +11,7 @@ const initializeDetailButtonEvents = () => {
         )
     }
 }
-             // CAN'T TOUCH THIS - END
-
-
-    // You will be writing code below this line
+    
     
     document.querySelector("#button--harry").addEventListener(
         "click",
@@ -54,4 +50,4 @@ const initializeDetailButtonEvents = () => {
     
 
 
-        export default initializeDetailButtonEvents;
+        export default initializeDetailButtonEvents

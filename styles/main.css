@@ -1,12 +1,11 @@
 @import "nav.css";
 @import "h.css";
-@import "fishlist";
+@import "fishlist.css";
 
-.container {
-    display: flex;
+.container { 
+    display: -moz-inline-grid;
     flex-wrap: wrap;
     justify-content: space-between;
-
 }
 body{
     background-color: aquamarine;
@@ -32,6 +31,7 @@ ul {
 
 .fish{
     text-align: center;
+    padding-left: 25px;
 
 }
 img {
