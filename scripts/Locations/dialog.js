@@ -10,7 +10,7 @@ const initializeDetailButtonEvents = () => {
                 dialogElement.close()
             }
         )
-    }
+    
     // CAN'T TOUCH THIS - END
 
 
@@ -25,7 +25,7 @@ const initializeDetailButtonEvents = () => {
         }
     )
 
-}
+
 
 document.querySelector("#button--gallatin").addEventListener(
     "click",
@@ -49,5 +49,7 @@ document.querySelector("#button--Bahamas").addEventListener(
         theDialog.showModal()
     }
 )
+}
+}
 
-initializeDetailButtonEvents();
+export default initializeDetailButtonEvents

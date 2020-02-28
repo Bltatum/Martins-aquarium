@@ -5,6 +5,7 @@
 // Import `useFish` from the data provider module
 import { useFish } from "./FishDataProvider.js"
 import Fish from "./Fish.js"
+
 const contentElement = document.querySelector(".fishList")
 
 const FishList = () => {

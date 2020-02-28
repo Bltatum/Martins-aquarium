@@ -9,9 +9,6 @@ const initializeDetailButtonEvents = () => {
                 dialogElement.close()
             }
         )
-    }
-}
-    
     
     document.querySelector("#button--harry").addEventListener(
         "click",
@@ -19,8 +16,8 @@ const initializeDetailButtonEvents = () => {
             const theDialog = document.querySelector("#details--harry")
             theDialog.showModal()
         }
+    
     )
-
 
     document.querySelector("#button--layla").addEventListener(
             "click",
@@ -46,8 +43,9 @@ const initializeDetailButtonEvents = () => {
                     }
     )
 
-
-    
+                }
+            }
+                
 
 
         export default initializeDetailButtonEvents
