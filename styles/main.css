@@ -13,6 +13,9 @@ body{
 .navigation {
     text-align: center;
 }
+aside {
+  text-align: center;
+}
 
 ul {
     list-style-type: none;
