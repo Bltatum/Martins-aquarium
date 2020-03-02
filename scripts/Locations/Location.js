@@ -8,9 +8,9 @@ const thisFunctionMakesAnHTMLRepOfLocationObject= (location) =>{
                 src="${location.image}">
            <figcaption>${location.name}</figcaption>
         
-       <div>
+       
             <button id="button--${location.name}">Details</button>
-        </div>
+        
     
         <dialog class="dialog--city" id="details--${location.name}">
             <div class="details">

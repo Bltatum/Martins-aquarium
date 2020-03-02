@@ -9,42 +9,28 @@ const initializeDetailButtonEvents = () => {
                 dialogElement.close()
             }
         )
-    
-    document.querySelector("#button--harry").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--harry")
-            theDialog.showModal()
-        }
-    
-    )
+    }
 
-    document.querySelector("#button--layla").addEventListener(
+    
+    
+                
+    // Get a reference to all buttons that start with "button--"
+    const allDetailButtons = document.querySelectorAll("button[id^='button--']")
+
+    // Add an event listener to each one
+    for (const btn of allDetailButtons) {
+        btn.addEventListener(
             "click",
-            theClickEvent => {
-                const theDialog = document.querySelector("#details--layla")
+            theEvent => {
+                const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+                const theDialog = document.querySelector(dialogSiblingSelector)
                 theDialog.showModal()
             }
-    )
+        )
+    }
+}
 
-    document.querySelector("#button--loyd").addEventListener(
-                "click",
-                theClickEvent => {
-                    const theDialog = document.querySelector("#details--loyd")
-                    theDialog.showModal()
-                }
-    )
-
-    document.querySelector("#button--izzy").addEventListener(
-                "click",
-                    theClickEvent => {
-                        const theDialog = document.querySelector("#details--izzy")
-                        theDialog.showModal()
-                    }
-    )
-
-                }
-            }
+            
                 
 
 

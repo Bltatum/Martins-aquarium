@@ -10,46 +10,26 @@ const initializeDetailButtonEvents = () => {
                 dialogElement.close()
             }
         )
+    }
     
     // CAN'T TOUCH THIS - END
 
 
     // You will be writing code below this line
 
-    // Show Bart's details when the button is clicked
-    document.querySelector("#button--Cancun").addEventListener(
-        "click",
-        theClickEvent => {
-            const theDialog = document.querySelector("#details--Cancun")
-            theDialog.showModal()
-        }
-    )
+     const allDetailButtons = document.querySelectorAll("button[id^='button--']")
 
-
-
-document.querySelector("#button--gallatin").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--gallatin")
-        theDialog.showModal()
+    // Add an event listener to each one
+    for (const btn of allDetailButtons) {
+        btn.addEventListener(
+            "click",
+            theEvent => {
+                const dialogSiblingSelector = `#${theEvent.target.id}+dialog`
+                const theDialog = document.querySelector(dialogSiblingSelector)
+                theDialog.showModal()
+            }
+        )
+           }
     }
-)
-document.querySelector("#button--puerto").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--puerto")
-        theDialog.showModal()
-    }
-)
-
-document.querySelector("#button--Bahamas").addEventListener(
-    "click",
-    theClickEvent => {
-        const theDialog = document.querySelector("#details--Bahamas")
-        theDialog.showModal()
-    }
-)
-}
-}
 
 export default initializeDetailButtonEvents
