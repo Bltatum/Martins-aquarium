@@ -2,17 +2,17 @@
 
 const locationCollection = [
 {
-    name: "Cancun, Mexico",
+    name: "Cancun",
     image:"https://expertvagabond.com/wp-content/uploads/things-to-do-cancun-guide.jpg",
     info: "Cancún is a city in southeast Mexico on the northeast coast of the Yucatán Peninsula in the Mexican state of Quintana Roo."
 },
 {
-    name: "Gallatin, Tn",
+    name: "Gallatin",
     image:"https://www.gallatintn.gov/ImageRepository/Document?documentID=69",
     info: "Gallatin is a city in and the county seat of Sumner County, Tennessee. The population was 30,278 at the 2010 census and 40,457 in 2018.",
 },
 {
-    name: "Puerto Rico",
+    name: "Puerto",
     image:"https://www.discoverpuertorico.com/sites/default/files/styles/small_horizontal/public/2019-01/east-region-icacos-island-fajardo.jpg?itok=hOx0GlDR",
     info: "Puerto Rico (Spanish for Rich Port; abbreviated PR), officially the Commonwealth of Puerto Rico (Spanish: Estado Libre Asociado de Puerto Rico, lit.",
 },
