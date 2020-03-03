@@ -1,5 +1,5 @@
 
-export const Fish = (fish) => {
+export const FishHTML = (fish) => {
     return `
         <div class="fish">
             <div>

@@ -36,8 +36,8 @@ ul {
 img {
     display: block;
     flex-wrap: wrap;
-    height: 8rem;
-    width: 8rem;
+    height: 15rem;
+    width: 15rem;
     border-radius: 25%;
 
 }
