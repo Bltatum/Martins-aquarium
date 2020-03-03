@@ -51,7 +51,7 @@ return holyFish
 export const soldierFish =() => {
    const soldiers = []
    for (const fish of fishCollection) {
-    if(fish.length % 5 ===0)
+    if(fish.length % 5 === 0)
    soldiers.push(fish)
    }
    return soldiers 
