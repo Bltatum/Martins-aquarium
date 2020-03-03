@@ -2,11 +2,6 @@
 @import "h.css";
 @import "fishlist.css";
 
-.container { 
-    display: -moz-inline-grid;
-    flex-wrap: wrap;
-    justify-content: space-between;
-}
 body{
     background-color: aquamarine;
 }
@@ -35,6 +30,7 @@ ul {
 .fish{
     text-align: center;
     padding-left: 25px;
+    text-decoration: underline;
 
 }
 img {
@@ -51,10 +47,16 @@ figcaption {
    
 
 }
+.fishlist{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
 figure {
     background-color: whitesmoke;
     border-radius: 25%;
 }
+
 button {
     border-radius: 25%;
     background-color: coral;
@@ -63,3 +65,4 @@ button {
 button:hover {
     background-color: yellowgreen;
   }
+  
