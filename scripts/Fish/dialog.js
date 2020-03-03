@@ -10,10 +10,6 @@ const initializeDetailButtonEvents = () => {
             }
         )
     }
-
-    
-    
-                
     // Get a reference to all buttons that start with "button--"
     const allDetailButtons = document.querySelectorAll("button[id^='button--']")
 

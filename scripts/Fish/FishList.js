@@ -3,24 +3,31 @@
  */
 
 // Import `useFish` from the data provider module
-import { useFish } from "./FishDataProvider.js"
-import Fish from "./Fish.js"
+import { mostHolyFish, soldierFish, nonHolyFish } from "./FishDataProvider.js"
+import {Fish} from "./Fish.js"
 
 const contentElement = document.querySelector(".fishList")
 
-const FishList = () => {
-    
-    const fishObjectArray = useFish()
+export const FishList = () => {
+  
+     let fishObjectArray = mostHolyFish()
 
 for (const fishObject of fishObjectArray){
+     const fishHTMLRep = Fish(fishObject)
+     contentElement.innerHTML += fishHTMLRep
+ }
+ fishObjectArray = soldierFish()
 
-   const fishHTMLRep = Fish(fishObject)
-   
-    contentElement.innerHTML += fishHTMLRep
+for (const fishObject of fishObjectArray){
+     const fishHTMLRep = Fish(fishObject)
+     contentElement.innerHTML += fishHTMLRep
+ }
+   fishObjectArray = nonHolyFish()
+
+for (const fishObject of fishObjectArray){
+     const fishHTMLRep = Fish(fishObject)
+     contentElement.innerHTML += fishHTMLRep
+    }
 
 }
-}
    
-
-
-export default FishList
